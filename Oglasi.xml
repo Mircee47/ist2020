@@ -1,87 +1,89 @@
-<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <!DOCTYPE Oglasi SYSTEM "Oglasi.dtd">
-<Oglasi xmlns="http://www.w3schools.com"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://www.w3schools.com oglasi.xsd">
+<Oglasi>
 
-         <!--prvi oglas-->
-         <stan> 
-         	<datumIsteka>
-         		<dan>1</dan>
-         		<mesec>1</mesec>
-         		<godina>2021</godina>
-         	</datumIsteka>
-         	<cena valuta="din">
-         		12000
-         	</cena>
-         	<tekstOglasa>
-         		Jednosoban stan, sa terasom u centru grada
-            </tekstOglasa>
-         	<tag>
-	         	<tag1>jednosoban</tag1>
-         		<tag2>terasa</tag2>
-         		<tag3>centar grada</tag3>
-         	 </tag>
-         	<e-mail tip="sluzbeni">marko@gmail.com</e-mail>
-         </stan>
+	<!--prvi oglas-->
+	<oglas kategorija="stan">
+		<datumIsteka>
+			<dan>1</dan>
+			<mesec>1</mesec>
+			<godina>2021</godina>
+		</datumIsteka>
+		<cena valuta="din">
+			12000
+		</cena>
+		<tekstOglasa>
+			Jednosoban stan, sa terasom u centru grada
+		</tekstOglasa>
+		<tag>
+			<tag1>jednosoban</tag1>
+			<tag2>terasa</tag2>
+			<tag3>centar grada</tag3>
+		</tag>
+		<e-mail tip="sluzbeni">marko@gmail.com</e-mail>
+	</oglas>
 
-         <!--drugi oglas-->
-         <stan>
-         	<datumIsteka>
-         		<dan>31</dan>
-         		<mesec>9</mesec>
-         		<godina>2021</godina>
-         	</datumIsteka>
-         	<cena valuta="din">
-         		20000
-         	</cena>	
-         	<tekstOglasa>dvosoban stan, sa dva kupatila u rakovici
-         	</tekstOglasa>
-         	<tag>
-         		<tag1>dvosoban</tag1>
-         		<tag2>rakovica</tag2>
-         		<tag3>odvojena kupatila</tag3>
-         	</tag>
-         	<e-mail tip="sluzbeni">zarko23@gmail.com</e-mail>
-         </stan>
+	<!--drugi oglas-->
+	<oglas kategorija="stan">
+		<datumIsteka>
+			<dan>31</dan>
+			<mesec>9</mesec>
+			<godina>2021</godina>
+		</datumIsteka>
+		<cena valuta="din">
+			20000
+		</cena>
+		<tekstOglasa>
+			dvosoban stan, sa dva kupatila u rakovici
+		</tekstOglasa>
+		<tag>
+			<tag1>dvosoban</tag1>
+			<tag2>rakovica</tag2>
+			<tag3>odvojena kupatila</tag3>
+		</tag>
+		<e-mail tip="sluzbeni">zarko23@gmail.com</e-mail>
+	</oglas>
 
-		<!--treci oglas-->
-         <automobil>
-         	<datumIsteka>
-         		<dan>20</dan>
-         		<mesec>12</mesec>
-         		<godina>2022</godina>
-         	</datumIsteka>
-         	<cena valuta="din">
-         		250000
-         	</cena>	
-         	<tekstOglasa> vw bora,malo presao, dizel 1.9, ide kao nov
-         	</tekstOglasa>
-         	<tag>
-         		<tag1>bora</tag1>
-         		<tag2>dizel</tag2>
-         		<tag3>1.9</tag3>
-         	</tag>
-         	<e-mail tip="privatni">jelena@gmail.com</e-mail>
-         </automobil>
+	<!--treci oglas-->
+	<oglas kategorija="autombil">
+		<kategorija>automobil</kategorija>
+		<datumIsteka>
+			<dan>20</dan>
+			<mesec>12</mesec>
+			<godina>2022</godina>
+		</datumIsteka>
+		<cena valuta="din">
+			250000
+		</cena>
+		<tekstOglasa>
+			vw bora,malo presao, dizel 1.9, ide kao nov
+		</tekstOglasa>
+		<tag>
+			<tag1>bora</tag1>
+			<tag2>dizel</tag2>
+			<tag3>1.9</tag3>
+		</tag>
+		<e-mail tip="privatni">jelena@gmail.com</e-mail>
+	</oglas>
 
-         <!--cetvrti oglas-->
-         <automobil>
-         	<datumIsteka>
-         		<dan>31</dan>
-         		<mesec>12</mesec>
-         		<godina>2020</godina>
-         	</datumIsteka>
-         	<cena valuta="din">
-         		320000
-         	</cena>	
-         	<tekstOglasa>mercedes benz a klasa, 3.0 motor benzin
-         	</tekstOglasa>
-         	<tag>
-         		<tag1>mercedes a klasa</tag1>
-         		<tag2>benzin</tag2>
-         		<tag3>3.0 benzin</tag3>
-         	</tag>
-         	<e-mail tip="sluzbeni">viktor@gmail.com</e-mail>
-         </automobil>
+	<!--cetvrti oglas-->
+	<oglas kategorija="automobil">
+		<datumIsteka>
+			<dan>31</dan>
+			<mesec>12</mesec>
+			<godina>2020</godina>
+		</datumIsteka>
+		<cena valuta="din">
+			320000
+		</cena>
+		<tekstOglasa>
+			mercedes benz a klasa, 3.0 motor benzin
+		</tekstOglasa>
+		<tag>
+			<tag1>mercedes a klasa</tag1>
+			<tag2>benzin</tag2>
+			<tag3>3.0 benzin</tag3>
+		</tag>
+		<e-mail tip="sluzbeni">viktor@gmail.com</e-mail>
+	</oglas>
 </Oglasi>
