@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE Oglasi [
+<!ELMENT Oglasi (stan, automobil)+>
+
+<!ELEMENT stan(datumIsteka, cena, tekstOglasa, tag, (e-mail)+)>
+
+<!ELEMENT datumIsteka(dan, mesec, godina)>
+<!ELEMENT dan (#PCDATA)>
+<!ELEMENT meesec (#PCDATA)>
+<!ELEMENT godina (#PCDATA)>
+
+<!ELEMENT cena (#PCDATA)>
+<!ATTLIST cena valuta (din|eur) "din">
+
+<!ELEMENT tekstOglasa (#PCDATA)
+
+<!ELEMENT tag(tag1, tag2, tag3)>
+<!ELEMENT tag1 (#PCDATA)>
+<!ELEMENT tag2 (#PCDATA)>
+<!ELEMENT tag3 (#PCDATA)>
+
+<!ELMENT e-mail (#PCDATA)>
+<!ATTLIST e-mail tip (privatni|sluzbeni) #REQUIRED>
+
+
+
+
+<!ELEMENT automobil (datumIsteka, cena, tekstOglasa, tag, (e-mail)+)>
+<!ELEMENT datumIsteka(dan, mesec, godina)>
+<!ELEMENT dan (#PCDATA)>
+<!ELEMENT meesec (#PCDATA)>
+<!ELEMENT godina (#PCDATA)>
+
+<!ELEMENT cena (#PCDATA)>
+<!ATTLIST cena valuta (din|eur) "din">
+
+<!ELEMENT tekstOglasa (#PCDATA)
+
+<!ELEMENT tag(tag1, tag2, tag3)>
+<!ELEMENT tag1 (#PCDATA)>
+<!ELEMENT tag2 (#PCDATA)>
+<!ELEMENT tag3 (#PCDATA)>
+
+<!ELMENT e-mail (#PCDATA)>
+<!ATTLIST e-mail tip (privatni|sluzbeni) #REQUIRED>
+]

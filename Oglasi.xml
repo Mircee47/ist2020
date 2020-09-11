@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<!DOCTYPE Adresar SYSTEM "adresar.dtd">
-<Adresar xmlns="http://www.w3schools.com"
+<!DOCTYPE Oglasi SYSTEM "Oglasi.dtd">
+<Oglasi xmlns="http://www.w3schools.com"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://www.w3schools.com adresar.xsd">
+         xsi:schemaLocation="http://www.w3schools.com oglasi.xsd">
 
          <!--prvi oglas-->
          <stan> 
@@ -11,20 +11,18 @@
          		<mesec>1</mesec>
          		<godina>2021</godina>
          	</datumIsteka>
-         	<cena>
-         		<iznos>12000</iznos>
-         		<valuta>din</valuta>
+         	<cena valuta="din">
+         		12000
          	</cena>
          	<tekstOglasa>
-         		<tekst>Jednosban stan, sa terasom u centru grada
-         		</tekst>
-         	</tekstOglasa>
+         		Jednosoban stan, sa terasom u centru grada
+            </tekstOglasa>
          	<tag>
 	         	<tag1>jednosoban</tag1>
-         		<tag2>terasa<tag2>
+         		<tag2>terasa</tag2>
          		<tag3>centar grada</tag3>
          	 </tag>
-         	<e-mail>marko@gmail.com</e-mail>
+         	<e-mail tip="sluzbeni">marko@gmail.com</e-mail>
          </stan>
 
          <!--drugi oglas-->
@@ -34,9 +32,8 @@
          		<mesec>9</mesec>
          		<godina>2021</godina>
          	</datumIsteka>
-         	<cena>
-         		<iznos>20000</iznos>
-         		<valuta>din</valuta>
+         	<cena valuta="din">
+         		20000
          	</cena>	
          	<tekstOglasa>dvosoban stan, sa dva kupatila u rakovici
          	</tekstOglasa>
@@ -45,48 +42,46 @@
          		<tag2>rakovica</tag2>
          		<tag3>odvojena kupatila</tag3>
          	</tag>
-         	<e-mail>zarko23@gmail.com</e-mail>
+         	<e-mail tip="sluzbeni">zarko23@gmail.com</e-mail>
          </stan>
 
 		<!--treci oglas-->
-         <stan>
+         <automobil>
          	<datumIsteka>
          		<dan>20</dan>
          		<mesec>12</mesec>
          		<godina>2022</godina>
          	</datumIsteka>
-         	<cena>
-         		<iznos>13000</iznos>
-         		<valuta>din</valuta>
+         	<cena valuta="din">
+         		250000
          	</cena>	
-         	<tekstOglasa>garsonjera,kod vukovog spomenika
+         	<tekstOglasa> vw bora,malo presao, dizel 1.9, ide kao nov
          	</tekstOglasa>
          	<tag>
-         		<tag1>garsonjera</tag1>
-         		<tag2>vukov spomenik</tag2>
-         		<tag3>kod vuka</tag3>
+         		<tag1>bora</tag1>
+         		<tag2>dizel</tag2>
+         		<tag3>1.9</tag3>
          	</tag>
-         	<e-mail>jelena@gmail.com</e-mail>
-         </stan>
+         	<e-mail tip="privatni">jelena@gmail.com</e-mail>
+         </automobil>
 
          <!--cetvrti oglas-->
-         <stan>
+         <automobil>
          	<datumIsteka>
          		<dan>31</dan>
          		<mesec>12</mesec>
          		<godina>2020</godina>
          	</datumIsteka>
-         	<cena>
-         		<iznos>16000</iznos>
-         		<valuta>din</valuta>
+         	<cena valuta="din">
+         		320000
          	</cena>	
-         	<tekstOglasa>dvosoban stan, na banovom brdu, poseban ulaz
+         	<tekstOglasa>mercedes benz a klasa, 3.0 motor benzin
          	</tekstOglasa>
          	<tag>
-         		<tag1>dvosoban</tag1>
-         		<tag2>banovo brdo</tag2>
-         		<tag3>poseban ulaz</tag3>
+         		<tag1>mercedes a klasa</tag1>
+         		<tag2>benzin</tag2>
+         		<tag3>3.0 benzin</tag3>
          	</tag>
-         	<e-mail>viktor@gmail.com</e-mail>
-         </stan>
-</Adresar>
+         	<e-mail tip="sluzbeni">viktor@gmail.com</e-mail>
+         </automobil>
+</Oglasi>
