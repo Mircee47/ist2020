@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!DOCTYPE Adresar SYSTEM "adresar.dtd">
+<Adresar xmlns="http://www.w3schools.com"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.w3schools.com adresar.xsd">
+
+         <!--prvi oglas-->
+         <stan> 
+         	<datumIsteka>
+         		<dan>1</dan>
+         		<mesec>1</mesec>
+         		<godina>2021</godina>
+         	</datumIsteka>
+         	<cena>
+         		<iznos>12000</iznos>
+         		<valuta>din</valuta>
+         	</cena>
+         	<tekstOglasa>
+         		<tekst>Jednosban stan, sa terasom u centru grada
+         		</tekst>
+         	</tekstOglasa>
+         	<tag>
+	         	<tag1>jednosoban</tag1>
+         		<tag2>terasa<tag2>
+         		<tag3>centar grada</tag3>
+         	 </tag>
+         	<e-mail>marko@gmail.com</e-mail>
+         </stan>
+
+         <!--drugi oglas-->
+         <stan>
+         	<datumIsteka>
+         		<dan>31</dan>
+         		<mesec>9</mesec>
+         		<godina>2021</godina>
+         	</datumIsteka>
+         	<cena>
+         		<iznos>20000</iznos>
+         		<valuta>din</valuta>
+         	</cena>	
+         	<tekstOglasa>dvosoban stan, sa dva kupatila u rakovici
+         	</tekstOglasa>
+         	<tag>
+         		<tag1>dvosoban</tag1>
+         		<tag2>rakovica</tag2>
+         		<tag3>odvojena kupatila</tag3>
+         	</tag>
+         	<e-mail>zarko23@gmail.com</e-mail>
+         </stan>
+
+		<!--treci oglas-->
+         <stan>
+         	<datumIsteka>
+         		<dan>20</dan>
+         		<mesec>12</mesec>
+         		<godina>2022</godina>
+         	</datumIsteka>
+         	<cena>
+         		<iznos>13000</iznos>
+         		<valuta>din</valuta>
+         	</cena>	
+         	<tekstOglasa>garsonjera,kod vukovog spomenika
+         	</tekstOglasa>
+         	<tag>
+         		<tag1>garsonjera</tag1>
+         		<tag2>vukov spomenik</tag2>
+         		<tag3>kod vuka</tag3>
+         	</tag>
+         	<e-mail>jelena@gmail.com</e-mail>
+         </stan>
+
+         <!--cetvrti oglas-->
+         <stan>
+         	<datumIsteka>
+         		<dan>31</dan>
+         		<mesec>12</mesec>
+         		<godina>2020</godina>
+         	</datumIsteka>
+         	<cena>
+         		<iznos>16000</iznos>
+         		<valuta>din</valuta>
+         	</cena>	
+         	<tekstOglasa>dvosoban stan, na banovom brdu, poseban ulaz
+         	</tekstOglasa>
+         	<tag>
+         		<tag1>dvosoban</tag1>
+         		<tag2>banovo brdo</tag2>
+         		<tag3>poseban ulaz</tag3>
+         	</tag>
+         	<e-mail>viktor@gmail.com</e-mail>
+         </stan>
+</Adresar>
