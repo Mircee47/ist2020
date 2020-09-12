@@ -14,7 +14,7 @@ let oglasi = [
         "id": 2,
         "Kategorija": "Stan",
         "tekst": "dvosoban stan, sa dva kupatila u rakovici",
-        "Email": "@zarko23gmail.com"
+        "Email": "zarko23@gmail.com"
     },
     {
         "id": 3,
