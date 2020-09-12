@@ -7,25 +7,25 @@ let oglasi = [
     {
         "id": 1,
         "Kategorija": "Stan",
-        "tekst": "Opis stana",
+        "tekst": "Jednosoban stan, sa terasom u centru grada",
         "Email": "marko@gmail.com"
     },
     {
         "id": 2,
         "Kategorija": "Stan",
-        "tekst": "Opis stana",
+        "tekst": "dvosoban stan, sa dva kupatila u rakovici",
         "Email": "@zarko23gmail.com"
     },
     {
         "id": 3,
         "Kategorija": "Automobil",
-        "tekst": "Opis automobila",
+        "tekst": "vw bora,malo presao, dizel 1.9, ide kao nov",
         "Email": "jelena@gmail.com"
     },
     {
         "id": 4,
         "Kategorija": "Automobil",
-        "tekst": "Opis automobila",
+        "tekst": "mercedes benz a klasa, 3.0 motor benzin",
         "Email": "viktor@gmail.com"
     }
 ];
@@ -115,8 +115,8 @@ http.createServer(function (req, res){
             });
         }
     }
-}).listen(5000);
-console.log("Server radi na portu 5000");
+}).listen(4000);
+console.log("Server radi na portu 4000");
 
 
 function sviOglasi(){
