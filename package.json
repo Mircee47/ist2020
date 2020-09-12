@@ -1,0 +1,15 @@
+{
+  "name": "ist2020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u001b[2~https://github.com/Mircee47/ist2020.git"
+  },
+  "author": "Mirko Cikairc",
+  "license": "ISC"
+}

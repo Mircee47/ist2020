@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svi Oglasi</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        th,td {
+            padding: 5px 12px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <a href="/postavi-tekst">Postavi Tekst</a><br><br>
+        <a href="/dodaj-oglas">Dodaj Oglas</a>
+    </div>
+    <h3>Svi oglasi</h3>
+    <div id="prikaz-oglasa">
+        <!-- Ovde ce biti prikazani oglasi ucitani uz pomoc ajax poziva -->
+    </div>
+
+    <script>
+        //Poziv ajax-a po ucitavanju stranice
+        $(document).ready(function(){
+            $.ajax({
+                url:'/api/svi-oglasi',
+                type: 'GET',
+                dataType: 'json',
+                success: function(response){
+                    prikazPodataka(response);
+                }
+            });
+        });
+        //Funkcija za prikaz odgovora sa servera u tabeli
+        function prikazPodataka(response){
+            let divPrikazOglasa = document.querySelector("#prikaz-oglasa");
+            let html = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Proizvodjac</th>
+                            <th>Email</th>
+                            <th>Tekst</th>
+                            <th>Brisanje</th>
+                        </tr>
+                    <thead>
+                    <tbody>
+            `;
+            for(let o of response){
+                html += `
+                    <tr>
+                        <td>${o.id}</td>
+                        <td>${o.Proizvodjac}</td>
+                        <td>${o.Email}</td>
+                        <td>${o.tekst}</td>
+                        <td>
+                            <form action='/obrisi-oglas' method='POST'>
+                                <input type='hidden' name='id' value='${o.id}'>
+                                <button type='submit'>Obrisi Oglas</td>
+                            </form>
+                        </td>
+                    </tr>
+                `;
+            }
+            html += `
+                    </tbody>
+                </table>
+            `;
+            divPrikazOglasa.innerHTML = html;
+        }
+    </script>
+</body>
+</html>

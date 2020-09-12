@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj Oglas</title>
+</head>
+<body>
+    <div>
+        <a href="/svi-oglasi">Svi Oglasi</a>
+    </div>
+    <h3>Dodaj Oglas</h3>
+    <!-- Forma za dodavanje novog Oglasa -->
+    <form action="/dodaj-oglas" method="POST">
+        ID: <input type="number" name="id"><br><br>
+        PROIZVODJAC: <input type="text" name="proizvodjac"><br><br>
+        TEKST: <input type="text" name="tekst"><br><br>
+        EMAIL: <input type="string" name="email"><br><br>
+        <button type="submit">Dodaj Oglas</button>
+    </form>
+</body>
+</html>

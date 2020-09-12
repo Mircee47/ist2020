@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postavi Tekst</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <a href="/svi-oglasi">Svi Oglasi</a>
+    </div>
+    <h3>Odaberi Oglas</h3>
+    <!-- Ovde ce biti ucitani svi podaci o oglasima putem ajax poziva -->
+    <div id="select-oglasi">
+    </div>
+    <form method="POST" action="/postavi-tekst">
+        ID: <input type="number" name="id" id='id' readonly><br><br>
+        TEKST: <input type="text" name="text" id='text'><br><br>
+        <button type="submit">Postavi Text</button>
+    </form>
+
+    <script>
+        //Poziv ajax-a po ucitavanju stranice
+        $(document).ready(function(){
+            $.ajax({
+                url:'/api/svi-oglasi',
+                type: 'GET',
+                dataType: 'json',
+                success: function(response){
+                    popuniPodatke(response);
+                }
+            });
+        });
+        //Popunjavanje select liste podacima o oglasima iz koje briamo koji tekst postavljamo
+        function popuniPodatke(response){
+            let selectOglasi = document.querySelector('#select-oglasi');
+            let html = `                
+                <select id="oglasi" onchange="popuniFormu()">    
+                    <option value='null'>--Izaberite oglas--</option>
+            `;
+            for(let o of response){
+                html += `
+                    <option value='${o.id}:${o.tekst}'>${o.Proizvodjac} ${o.Email} ${o.tekst}</option>
+                `;
+            }
+            html += `
+                </select><br><br>
+            `;
+            selectOglasi.innerHTML = html;
+        }
+        //Popunjavanje forme na osnovu izabranih oglasa
+        function popuniFormu(){
+            let selectOglasi = document.querySelector('#oglasi');
+            document.querySelector('#id').value = selectOglasi.value.split(':')[0]
+            document.querySelector('#tekst').value = selectOglasi.value.split(':')[1]
+        }
+    </script>
+</body>
+</html>
